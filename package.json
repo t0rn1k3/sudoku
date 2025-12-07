@@ -6,6 +6,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "lite-server": "^2.6.1",
     "tsconfig.json": "^1.0.11"
   }
 }
