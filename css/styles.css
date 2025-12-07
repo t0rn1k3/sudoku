@@ -25,4 +25,19 @@ body {
   border: 1px solid #005f73;
   width: 100%;
   height: 100%;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cell::-webkit-inner-spin-button {
+  appearance: none;
+}
+.cell {
+  caret-color: transparent;
+}
+.cell:focus {
+  background-color: #0a9396;
+}
+.cell:hover {
+  background-color: #0a9396;
 }
