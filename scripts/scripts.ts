@@ -40,4 +40,11 @@ const validateRow = function (rowIndex: number) {
   return true;
 };
 
-validateRow(0);
+const valudateAllRows = function (): Boolean {
+  for (let r = 0; r < 9; r++) {
+    if (!validateRow(r)) {
+      return false;
+    }
+  }
+  return true;
+};
