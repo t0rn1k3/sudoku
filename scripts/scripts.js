@@ -1,4 +1,5 @@
 var gameCont = document.querySelector(".game-container");
+var checkButton = document.querySelector(".check-button");
 for (var row = 0; row < 9; row++) {
     for (var col = 0; col < 9; col++) {
         var cell = document.createElement("input");
@@ -11,3 +12,8 @@ for (var row = 0; row < 9; row++) {
         gameCont.appendChild(cell);
     }
 }
+var validateRow = function (rowIndex) {
+    var rowCells = document.querySelectorAll(".cell[data-row=\"".concat(rowIndex, "\"]"));
+    console.log(rowCells);
+};
+validateRow(0);

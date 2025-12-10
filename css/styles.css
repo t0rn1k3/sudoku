@@ -9,14 +9,17 @@ body {
   background-color: #94d2bd;
   height: calc(100vh - 100px);
 }
-.game-container {
-  width: 549px;
-  border: 2px solid #005f73;
+.main-container {
+  width: 378px;
   margin: 100px auto 0;
+}
+.game-container {
+  border: 2px solid #005f73;
   display: grid;
-  grid-template-columns: repeat(9, 60px);
-  grid-template-rows: repeat(9, 60px);
-  gap: 1px;
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(9, 40px);
+  gap: 2px;
+  margin-bottom: 5px;
 }
 .cell {
   background-color: transparent;
@@ -40,4 +43,12 @@ body {
 }
 .cell:hover {
   background-color: #0a9396;
+}
+.check-button {
+  border: 0;
+  cursor: pointer;
+  background-color: #0a9396;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 3px;
 }

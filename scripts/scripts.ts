@@ -1,4 +1,7 @@
 const gameCont = document.querySelector(".game-container") as HTMLDivElement;
+const checkButton = document.querySelector(
+  ".check-button"
+) as HTMLButtonElement;
 
 for (let row = 0; row < 9; row++) {
   for (let col = 0; col < 9; col++) {
@@ -13,3 +16,12 @@ for (let row = 0; row < 9; row++) {
     gameCont.appendChild(cell);
   }
 }
+
+const validateRow = function (rowIndex: number) {
+  const rowCells = document.querySelectorAll<HTMLInputElement>(
+    `.cell[data-row="${rowIndex}"]`
+  );
+  console.log(rowCells);
+};
+
+validateRow(0);
