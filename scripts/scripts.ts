@@ -21,7 +21,23 @@ const validateRow = function (rowIndex: number) {
   const rowCells = document.querySelectorAll<HTMLInputElement>(
     `.cell[data-row="${rowIndex}"]`
   );
-  console.log(rowCells);
+  const seen = new Set<number>();
+
+  for (let cell of rowCells) {
+    const value = Number(cell.value);
+
+    if (!value) continue;
+    if (value < 1 || value > 9) {
+      return false;
+    }
+    if (seen.has(value)) {
+      return false;
+    }
+
+    seen.add(value);
+  }
+
+  return true;
 };
 
 validateRow(0);
