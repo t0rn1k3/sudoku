@@ -52,3 +52,7 @@ body {
   padding: 7px 15px;
   border-radius: 3px;
 }
+.fixed {
+  background-color: #0a9396;
+  font-weight: bold;
+}
